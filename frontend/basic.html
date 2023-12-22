@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar" id="navbarId">
+        <img class="logo-image" src="./Apple-logo.png" alt="logo" />
+    <ul class="parent" >
+        <li class="child">
+            <a href="./page1.html">Page1</a>
+        </li>
+        <li onclick="method1()" class="child text-black ">Store</li>
+        <li class="child text-black bg-danger">Mac</li>
+        <li class="child">iPhone</li>
+        <li class="child">iPad</li>
+    </ul>
+</div>
+
+<div class="form">
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input type="text" class="form-control" placeholder="enter mail ID" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping">@</span>
+    <input type="text" class="form-control" placeholder="Enter password" aria-label="Username" aria-describedby="addon-wrapping">
+    <button type="button" class="btn btn-outline-info">Info</button>
+
+  </div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch calculator
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Calculator</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+                
+                <input type="number" id="number1" placeholder="Enter 1st no " class="form-control">
+                <input type="number" id ="number2" placeholder="Enter 2nd no" class="form-control">
+              </div>
+              <div>
+                <select id="operation" >
+                <option value="add">addition</option>
+                <option value="sub">Subtraction</option>
+                <option value="mul">Multiplication</option>
+                <option value="div">division</option>
+                </select>
+              </div>
+              <div class="result-parent" id="result-div">
+                <h6>Result:</h6>
+                <h6 id="mainResult"></h6>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="Calculate()">Calculate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- <div class="tableSection">
+    <table border>
+        <thead>
+            <th>Name</th>
+            <th>Password</th>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>admin@123.com</td>
+                <td>123</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+<script src="./basic.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
